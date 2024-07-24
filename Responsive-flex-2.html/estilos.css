@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f2f4cb;
+  font-family: Quicksand;
+}
+
+:root {
+  --gnd-background-color: #efabff;
+  --gnd-text-color: #110b11;
+  --gnd-background2: #f2f4cb;
+  --gnd-text-color-2: #a5d0a8;
+  --gnd-special-color: #a71d31;
+}
+header {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gandinga {
+  display: flex;
+  align-items: center;
+}
+
+.gandinga img {
+  max-width: 50px;
+}
+
+.gandinga h1 {
+  margin-left: 10px;
+  color: #a71d31;
+  text-shadow: 2px 2px 4px #cacaca;
+  font-size: 30px;
+}
+
+header > nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  list-style: none;
+}
+
+a {
+  color: var(--gnd-text-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+.menu {
+  display: none;
+  width: 30px;
+  height: 30px;
+}
+
+.primera-seccion {
+  display: flex;
+  flex-direction: row;
+}
+.presentation {
+  width: 50%;
+  height: 380px;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.presentation > h2 {
+  color: var(--gnd-text-color);
+  width: 20rem;
+  height: auto;
+  font-size: 30px;
+}
+.pastel {
+  color: var(--gnd-special-color);
+}
+.presentation > p {
+  width: 20rem;
+  height: auto;
+  font-size: 15px;
+}
+
+.seemore {
+  background-color: #a71d31;
+  color: var(--gnd-background2);
+  border: none;
+  border-radius: 30px;
+  width: 50%;
+  height: 30px;
+}
+.seemore:hover {
+  cursor: pointer;
+}
+
+.pendientes-corazon {
+  width: 50%;
+  display: flex;
+  padding: 70px;
+  padding-left: 30px;
+  flex-direction: column;
+  position: relative;
+}
+.pendientes-corazon > img {
+  width: 18rem;
+  height: 15rem;
+  border-radius: 100%;
+  padding-top: 0%;
+}
+.acero {
+  position: absolute;
+  padding: 5px;
+  border-radius: 30px;
+  font-size: 10px;
+  color: var(--gnd-text-color);
+  background: rgba(255, 255, 255, 0.7);
+  top: 30%;
+}
+
+.arcilla {
+  position: absolute;
+  padding: 5px;
+  border-radius: 30px;
+  font-size: 10px;
+  color: var(--gnd-text-color);
+  background: rgba(255, 255, 255, 0.7);
+  bottom: 30%;
+  left: 50%;
+}
+
+.permanente > h2 {
+  padding-left: 70px;
+}
+
+.producto {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-left: 40px;
+  margin-top: 20px;
+  display: inline-block;
+  width: 170px;
+  height: auto;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.producto img {
+  max-width: 100%;
+  height: 180px;
+  border-radius: 15px;
+}
+
+.producto h3 {
+  font-size: 15px;
+  margin: 10px 0;
+  border-radius: 20px;
+}
+
+.producto p {
+  font-size: 12px;
+  color: #666;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: var(--gnd-special-color);
+  height: 60px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.redes-sociales img {
+  width: 30px;
+  height: 30px;
+  background: none;
+}
+
+.redes-sociales ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  background: none;
+  margin-right: 10px;
+}
+.redes-sociales {
+  background: none;
+}
+.redes-sociales li {
+  margin: 0 10px;
+  background: none;
+}
+
+.redes-sociales a {
+  text-decoration: none;
+}
+h4 {
+  background: none;
+  color: var(--gnd-background2);
+  font-size: 12px;
+  margin-left: 10px;
+  width: 80%;
+}
+
+@media (max-width: 500px) {
+  header > nav {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .seemore {
+    width: 80px;
+  }
+  .primera-seccion {
+    flex-direction: column;
+  }
+  .pendientes-corazon {
+    padding-top: 0%;
+  }
+}
+
+@media (max-width: 800px) {
+  .presentation > p {
+    width: 12rem;
+  }
+  .presentation > h2 {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .presentation {
+    padding-left: 20px;
+  }
+  .pendientes-corazon > img {
+    width: 14rem;
+    height: 11rem;
+  }
+}
